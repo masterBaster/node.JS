@@ -1,1 +1,12 @@
 console.log('hello world');
+
+setTimeout(function(){
+    console.log('inside function 3 sec have passed...');
+}, 3000);
+
+var time = 0;
+
+setInterval(function(){
+    time += 2;
+    console.log(time + ' seconds have passed');
+}, 2000);

@@ -26,6 +26,10 @@ let say_bye = function(parameter){
 }
 say_bye('say good bye');
 
-var counter = require('./app_3.js');
+const counter = require('./app_3.js');
 console.log(counter.counter(['yell', 'crystal']));
+
+const Square = require('./app_4.js');
+const mySquare = new Square(5);
+console.log(`the area of mySquare is ${mySquare.area()}`);
 

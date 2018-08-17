@@ -32,6 +32,12 @@ console.log(counter(['yell', 'crystal']));
 const counter_pattern = require('./app_3.js')
 console.log(counter_pattern.counter_pattern(['yell', 'crystal', 'yoshi']));
 
+const adder = require('./app_3.js');
+console.log(adder.adder(1,2,3));
+
+const cube = require('./app_3.js');
+console.log(cube.cube(1,5,6));
+
 const Square = require('./app_4.js');
 const mySquare = new Square(5);
 console.log(`the area of mySquare is ${mySquare.area()}`);

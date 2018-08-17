@@ -6,4 +6,8 @@ module.exports = class Square {
     area(){
         return this.width **2;
     }
+
+    cuboid(){
+        return this.width * this.width *this.width;
+    }
 };

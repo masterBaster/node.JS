@@ -1,7 +1,7 @@
-const EventEmitter = require('events');
+const eventemitter = require('events');
 const util = require('util');
 
-class MyEmitter extends EventEmitter {
+class MyEmitter extends eventemitter {
   constructor() {
     super();
   }     
@@ -20,7 +20,33 @@ const BasketBallPlayers = function(name, surname, age){
     this.age = age;
 }
 
-util.inherits(BasketBallPlayers, EventEmitter.EventEmitter);
-const james = new Person(James, Harden, 30);
-const chris = new Person(Chris, Paul, 29);
-const kevin = new Person(Kervin, Durant, 30);
+util.inherits(BasketBallPlayers, eventemitter.EventEmitter);
+const james = new BasketBallPlayers('James', 'Harden', 30);
+const chris = new BasketBallPlayers("Chris", 'Paul', 29);
+const kevin = new BasketBallPlayers('Kervin', 'Durant', 30);
+
+const best_players = [james, chris, kevin];
+
+best_players.forEach(players => {
+    players.on('play_hard', function(mssg){
+        console.log(players.name + ' said ' + mssg)
+    })
+});
+
+james.emit('play_hard', 'inside mssg param');
+
+//ES6
+
+class Person extends eventemitter {
+    write(name) {
+        this.emit('say_name', name);
+    }
+}
+
+const marry = new Person();
+
+marry.on('say_name', (name) => {
+    console.log(`she's name: ${name}`);
+})
+
+marry.write('marry');

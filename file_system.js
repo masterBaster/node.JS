@@ -14,6 +14,6 @@ console.log('test');
 fs.readFile('readMe.txt', 'utf8', (data) => {
     fs.writeFile('wiriteMeAsync.txt', data, (error) => {
         if (error) throw err;
-        console.log('The file has been saved');
+        console.log('The file has been saved') || fs.unlink('writeMe.txt');
     });
 });

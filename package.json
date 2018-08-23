@@ -1,0 +1,21 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "test app",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masterBaster/node.JS.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masterBaster/node.JS/issues"
+  },
+  "homepage": "https://github.com/masterBaster/node.JS#readme"
+}

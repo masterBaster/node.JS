@@ -6,14 +6,10 @@ const port = 3000;
 
 const server = http.createServer((req, res) => {
     console.log('request was made: ' + req.url);
-    res.writeHead(200, {'Content-Type': 'application/json'});
-    
-    const MyObject = {
-        name: 'James',
-        surname: 'Harden',
-        age: 28
-    };
-    res.end(JSON.stringify(MyObject));
+    if(req.url === '/home' || req.url === '/'){
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        fs.createReadStream(__dirname + '/index.html').pipe(res);
+    }
 });
 
 server.listen(port, hostname, () => {

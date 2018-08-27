@@ -5,7 +5,7 @@
         body{background: skyblue; font-family: verdana; color: #fff; padding: 30px;}
         h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
         h2{font-size: 30px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
-        p, li {font-size: 16px; text-align: center;}
+        p, li {font-size: 16px; text-align: center; list-style-type: none;}
     </style>
 
     <meta charset="utf-8">
@@ -13,6 +13,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <% include paritials/nav.ejs %>
     <h1>Welcome to the profile of <%= person %></h1>
     <p><strong>Age: <%= data.age %></strong></p>
     <p><strong>Job: <%= data.job %></strong></p>

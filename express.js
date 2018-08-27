@@ -16,7 +16,7 @@ app.get('/homepage', function(req, res){
 });
 
 app.get('/profile/:name', function(req, res){
-    let data = { age: 29, job: 'progremmmer'};
+    let data = { age: 29, job: 'progremmmer', hobbies: ['fishing', 'playing basketball', 'watching tv']};
     res.render('profile', {person: req.params.name, data: data});  
 })
 

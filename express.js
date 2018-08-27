@@ -1,7 +1,8 @@
-const express = require('express');
-const app = express();
+var express = require('express');
+var app = express();
 
 app.set('view engine', 'ejs');
+app.use('/assets', express.static('assets'));
 
 app.get('/contact', function(req, res){
     res.render('contact');

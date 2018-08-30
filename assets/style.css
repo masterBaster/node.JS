@@ -2,3 +2,34 @@ body{background: skyblue; font-family: verdana; color: #fff; padding: 30px;}
 h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
 h2{font-size: 30px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
 p, li {font-size: 16px; text-align: center; list-style-type: none;}
+input[type=text], input[type=email] {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+input[type=submit] {
+    background-color: #3b5998;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color:#8b9dc3;
+}
+
+/* Add a background color and some padding around the form */
+#contact-form {
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: 20px;
+}
+

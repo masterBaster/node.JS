@@ -16,7 +16,7 @@ app.get('/contact', function(req, res){
 
 app.post('/contact', urlencodedParser, function(req, res){
     console.log(req.body)
-    res.render('contact', {qs: req.query});
+    res.render('contact-success', {data: req.body});
 });
 
 app.get('/homepage', function(req, res){

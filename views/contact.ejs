@@ -10,22 +10,20 @@
     <% include paritials/nav.ejs %>
     <h1>Contact Us!</h1>
     <p>Welcome to the most awsome website on the planet.</p>
-
-
     <form id="contact-form" method="POST" action="/contact">
-        <label for="who">Who do you want to contact?</label>
-        <input type="text" name="who" value="<%= qs.person %>"></input>
-        <p></p>
-        <label for="who">Who do you want to contact, give me a surname?</label>
-        <input type="text" name="who" value="<%= qs.surname %>"></input>
-        <p></p>
-        <label for="departament">Which departament?</label>
-        <input type="text" name="departament" value="<%= qs.dept %>"></input>
-        <p></p>
-        <label for="email">Your email</label>
-        <input type="email" name="email" value="<%= qs.email %>"></input>
-        <p></p>
-        <input type="submit" value="submit">
-    </form>
+      <label for="who">Who do you want to contact?</label>
+      <input type="text" name="who" value="<%= qs.person %>"></input>
+      <p></p>
+      <label for="who">Who do you want to contact, give me a surname?</label>
+      <input type="text" name="who" value="<%= qs.surname %>"></input>
+      <p></p>
+      <label for="departament">Which departament?</label>
+      <input type="text" name="departament" value="<%= qs.dept %>"></input>
+      <p></p>
+      <label for="email">Your email</label>
+      <input type="email" name="email" value="<%= qs.email %>"></input>
+      <p></p>
+      <input type="submit" value="submit">
+  </form>
 </body>
 </html>
